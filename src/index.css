@@ -1,0 +1,11 @@
+.card-content {
+  padding: 5%;
+}
+
+.card{
+  overflow: hidden;
+  border-radius: 8px;
+  border-left: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  border-bottom: solid 5px #888;
+}
