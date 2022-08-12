@@ -1,14 +1,26 @@
-import slackCommunities from '../slack_communities.json'
 import type { CommunityProps } from './SlackCommunity'
 import SlackCommunity from './SlackCommunity'
+import { useState } from 'react'
 
-const SlackCommunityList = () => {
-    const communities = slackCommunities as CommunityProps[]
+type CommunityListProps = {
+    communities: CommunityProps[]
+}
+
+const SlackCommunityList = (props: CommunityListProps) => {
+    console.log(props.communities)
+    const [tag, setTag] = useState('');
+    const filter = (tag: string) => {
+        setTag(tag)
+    }
+
+    const filteredCommunities = tag === '' ? props.communities : props.communities.filter((community) => community.tags.includes(tag))
+
     return (
         <div>
-        { communities.map((community: CommunityProps) => <SlackCommunity { ...community } />) }
+            { filteredCommunities.map((community: CommunityProps) => <SlackCommunity {...community} onTagClick={filter} />) }
         </div>
     )
 }
 
 export default SlackCommunityList
+export type {CommunityListProps}

@@ -6,15 +6,17 @@ type CommunityProps = {
     description: string,
     homepage?: string
     slackLink?: string,
+    onTagClick: (tag: string) => void
 }
 
-const SlackCommunity = (props: CommunityProps) => {
+const  SlackCommunity = (props: CommunityProps) => {
+    console.log(props)
     return (
         <div>
             <div className='card'>
                 {props.name}
                 <div>
-                    {TagContainer({ tags: props.tags })}
+                    {TagContainer({ tags: props.tags, onTagClick: props.onTagClick })}
                     <div>
                         {props.description}
                     </div>

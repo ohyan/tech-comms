@@ -1,9 +1,14 @@
-const TagContainer = (props: { tags: string[] }) => {
+type Props = {
+    tags: string[];
+    onTagClick: (tag: string) => void;
+}
+
+const TagContainer = (props: Props) => {
     return (
         <div>
         {
             props.tags.map((tag) => (
-                <span className= 'tag' > { tag } </span>
+                <button onClick={() => props.onTagClick(tag)} className='tag' > { tag } </button>
             ))
         }
         </div>
