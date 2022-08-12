@@ -8,7 +8,7 @@ const TagContainer = (props: Props) => {
         <div>
         {
             props.tags.map((tag) => (
-                <button onClick={() => props.onTagClick(tag)} className='tag' > { tag } </button>
+                <button onClick={() => props.onTagClick(tag)} className='button tag' > { tag } </button>
             ))
         }
         </div>

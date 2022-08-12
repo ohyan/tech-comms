@@ -16,8 +16,10 @@ const SlackCommunityList = (props: CommunityListProps) => {
     const filteredCommunities = tag === '' ? props.communities : props.communities.filter((community) => community.tags.includes(tag))
 
     return (
-        <div>
-            { filteredCommunities.map((community: CommunityProps) => <SlackCommunity {...community} onTagClick={filter} />) }
+        <div className='card-rows'>
+            <div className='card-group'>
+                { filteredCommunities.map((community: CommunityProps) => <SlackCommunity {...community} onTagClick={filter} />) }
+            </div>
         </div>
     )
 }

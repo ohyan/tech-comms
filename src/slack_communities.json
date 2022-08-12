@@ -1,8 +1,35 @@
 [
     {
-        "name": "hogehoge1"
+        "name": "BQ Fun",
+        "tags": [
+            "GCP",
+            "BigQuery"
+        ],
+    "description": "BigQuery依存症の方を増やすための組織",
+        "link": "https://bqfun.jp/docs/"
     },
     {
-        "name": "hogehoge2"
+        "name": "datatech-jp",
+        "tags": [
+            "Data Engineering"
+        ],
+        "description": "データエンジニアリング、データ活用についての知見を共有したり、交流するためのコミュニティ",
+        "link": "https://datatech-jp.github.io/"
+    },
+    {
+        "name": "dbt",
+        "tags": [
+            "Data Engineering"
+        ],
+        "description": "The dbt Community is where analytics engineering lives and grows, and you're a part of it!",
+        "link": "https://www.getdbt.com/community/"
+    },
+    {
+        "name": "search-tech-jp",
+        "tags": [
+            "Search Engine"
+        ],
+        "description": "検索技術に関する情報交換を目的とした Slack",
+        "link": "https://twitter.com/takuya_b/status/1377219737457860610"
     }
 ]
