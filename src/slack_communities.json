@@ -2,8 +2,8 @@
     {
         "name": "BQ Fun",
         "tags": [
-            "GCP",
-            "BigQuery"
+            "gcp",
+            "bigquery"
         ],
     "description": "BigQuery依存症の方を増やすための組織",
         "link": "https://bqfun.jp/docs/"
@@ -11,7 +11,7 @@
     {
         "name": "datatech-jp",
         "tags": [
-            "Data Engineering"
+            "data engineering"
         ],
         "description": "データエンジニアリング、データ活用についての知見を共有したり、交流するためのコミュニティ",
         "link": "https://datatech-jp.github.io/"
@@ -19,7 +19,7 @@
     {
         "name": "dbt",
         "tags": [
-            "Data Engineering"
+            "data engineering"
         ],
         "description": "The dbt Community is where analytics engineering lives and grows, and you're a part of it!",
         "link": "https://www.getdbt.com/community/"
@@ -27,9 +27,17 @@
     {
         "name": "search-tech-jp",
         "tags": [
-            "Search Engine"
+            "search engine"
         ],
         "description": "検索技術に関する情報交換を目的とした Slack",
         "link": "https://twitter.com/takuya_b/status/1377219737457860610"
+    },
+    {
+        "name": "connpass MLOps",
+        "tags": [
+            "mlops"
+        ],
+        "description": "先駆けてMLOpsに取り組まれている事例の講演など、MLOpsに関する最先端の情報を共有する会を開催",
+        "link": "https://mlops.connpass.com/"
     }
 ]

@@ -9,7 +9,6 @@ type CommunityProps = {
 }
 
 const  SlackCommunity = (props: CommunityProps) => {
-    console.log(props)
     return (
         <div>
             <div className='color-block'>

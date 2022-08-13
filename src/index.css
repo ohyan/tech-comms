@@ -52,7 +52,7 @@ body {
   background: #FFFFFF;
   z-index: 30;
   border-radius: 30px;
-  width: 180px;
+  width: 240px;
   padding: 10px 20px 20px 20px;
   margin: 10px;
 }
@@ -65,10 +65,49 @@ body {
   align-content:stretch;
 }
 
-/* .card-group > :nth-child(n){
-  margin-left: 20px;
-} */
+@media (max-width: 1360px) {
+  .github-corner {
+    display: none;
+  }
+}
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
 
-/* .card-group > :nth-child(n+2){
-  margin-top: 20px;
-} */
+.githubCorner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .githubCorner:hover .octo-arm {
+    animation: none;
+  }
+
+  .githubCorner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.dropdown-row {
+  text-align:center;
+  padding: 20px;
+}
