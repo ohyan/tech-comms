@@ -39,5 +39,37 @@
         ],
         "description": "先駆けてMLOpsに取り組まれている事例の講演など、MLOpsに関する最先端の情報を共有する会を開催",
         "link": "https://mlops.connpass.com/"
+    },
+    {
+        "name": "docker",
+        "tags": [
+            "docker"
+        ],
+        "description": "Learn, connect, and collaborate with Docker developers around the world",
+        "link": "https://www.docker.com/community/"
+    },
+    {
+        "name": "kubernetes",
+        "tags": [
+            "kubernetes"
+        ],
+        "description": "Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications.",
+        "link": "https://kubernetes.io/community/"
+    },
+    {
+        "name": "GCPUG",
+        "tags": [
+            "gcp"
+        ],
+        "description": "Google Cloud Platformを普及させることを目的とし、Googleと共にGCPをより良くし、盛り上げていくユーザーグループ",
+        "link": "https://gcpug.jp/"
+    },
+    {
+        "name": "ng-japan",
+        "tags": [
+            "angular"
+        ],
+        "description": "Angularの日本ユーザーコミュニティ",
+        "link": "https://ngjapan.org/"
     }
 ]
