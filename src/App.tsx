@@ -31,7 +31,7 @@ function App() {
         <div>
             <GithubCorner />
             <div className="logo-row">
-              <img src="./logo.png" className="logo" />
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} className="logo" />
             </div>
             <div>
               <TagDropDown {...dropDownProps} selectedTag={selectedTag}/>
