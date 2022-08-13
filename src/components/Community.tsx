@@ -8,7 +8,7 @@ type CommunityProps = {
     onTagClick: (tag: string) => void
 }
 
-const  SlackCommunity = (props: CommunityProps) => {
+const  Community = (props: CommunityProps) => {
     return (
         <div>
             <div className='color-block'>
@@ -22,5 +22,5 @@ const  SlackCommunity = (props: CommunityProps) => {
     )
 }
 
-export default SlackCommunity
+export default Community
 export type { CommunityProps }

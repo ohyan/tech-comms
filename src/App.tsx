@@ -1,15 +1,15 @@
 import {useState} from 'react';
-import slackCommunities from './slack_communities.json'
+import Communities from './community_list.json'
 import './App.css';
-import type { CommunityProps } from './components/SlackCommunity';
-import type { CommunityListProps } from './components/SlackCommunityList';
+import type { CommunityProps } from './components/Community';
+import type { CommunityListProps } from './components/CommunityList';
 import type {DropDownProps} from './components/TagDropDown'
-import SlackCommunityList from './components/SlackCommunityList';
+import CommunityList from './components/CommunityList';
 import GithubCorner from './components/GithubCorner';
 import TagDropDown from './components/TagDropDown';
 
 
-const communities = slackCommunities as CommunityProps[]
+const communities = Communities as CommunityProps[]
 const communityList = { communities } as CommunityListProps
 
 
@@ -35,7 +35,7 @@ function App() {
             <TagDropDown {...dropDownProps} selectedTag={selectedTag}/>
           </div>
           <div>
-            <SlackCommunityList  { ...communityList } selectedTag={selectedTag}/>
+            <CommunityList  { ...communityList } selectedTag={selectedTag}/>
           </div>
       </div>
     </body>

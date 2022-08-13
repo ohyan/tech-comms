@@ -1,5 +1,5 @@
-import type { CommunityProps } from './SlackCommunity'
-import SlackCommunity from './SlackCommunity'
+import type { CommunityProps } from './Community'
+import Community from './Community'
 import { useState } from 'react'
 
 type CommunityListProps = {
@@ -19,7 +19,7 @@ function shuffle<T>(array: T[]) {
 }
 
 
-const SlackCommunityList = (props: CommunityListProps) => {
+const CommunityList = (props: CommunityListProps) => {
     const [tag, setTag] = useState('');
     const filter = (tag: string) => {
         setTag(tag)
@@ -31,11 +31,11 @@ const SlackCommunityList = (props: CommunityListProps) => {
     return (
         <div className='card-rows'>
             <div className='card-group'>
-                { shuffledCommunities.map((community: CommunityProps) => <SlackCommunity {...community} onTagClick={filter}/>) }
+                { shuffledCommunities.map((community: CommunityProps) => <Community {...community} onTagClick={filter}/>) }
             </div>
         </div>
     )
 }
 
-export default SlackCommunityList
+export default CommunityList
 export type {CommunityListProps}

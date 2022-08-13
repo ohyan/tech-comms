@@ -1,5 +1,5 @@
-import slackCommunities from '../slack_communities.json'
-import type { CommunityProps } from './SlackCommunity';
+import Communities from '../community_list.json'
+import type { CommunityProps } from './Community';
 import Dropdown from 'react-bootstrap/Dropdown';
 
 type DropDownProps = {
@@ -8,7 +8,7 @@ type DropDownProps = {
   selectedTag: string
 }
 
-const communities = slackCommunities as CommunityProps[]
+const communities = Communities as CommunityProps[]
 const communityTags = communities.map((community) => community.tags).flat()
 
 const TagCounter = (tags: string[]) => {
