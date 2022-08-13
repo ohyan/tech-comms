@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Communities from './community_list.json'
 import './App.css';
 import type { CommunityProps } from './components/Community';
@@ -25,20 +26,22 @@ function App() {
   }
 
   return (
-    <body>
-      <div>
-          <GithubCorner />
-          <div className="logo-row">
-            <img src="./logo.png" className="logo" />
-          </div>
-          <div>
-            <TagDropDown {...dropDownProps} selectedTag={selectedTag}/>
-          </div>
-          <div>
-            <CommunityList  { ...communityList } selectedTag={selectedTag}/>
-          </div>
-      </div>
-    </body>
+    <Router basename={process.env.PUBLIC_URL}>
+      <body>
+        <div>
+            <GithubCorner />
+            <div className="logo-row">
+              <img src="./logo.png" className="logo" />
+            </div>
+            <div>
+              <TagDropDown {...dropDownProps} selectedTag={selectedTag}/>
+            </div>
+            <div>
+              <CommunityList  { ...communityList } selectedTag={selectedTag}/>
+            </div>
+        </div>
+      </body>
+    </Router>
   );
 }
 
